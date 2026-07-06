@@ -2269,6 +2269,15 @@ App.UIController = (function () {
     App.Wizard.init();
   });
 })();
-</script>
+ </script>
+ <script src="https://telegram.org/js/telegram-web-app.js"></script>
+ <script>
+  // اعلام آمادگی به تلگرام
+  window.Telegram.WebApp.ready();
+  
+  // (اختیاری) برای تنظیم دکمه اصلی
+  window.Telegram.WebApp.MainButton.text = "اشتراک‌گذاری کارت";
+  window.Telegram.WebApp.MainButton.show();
+ </script>
 </body>
 </html>
