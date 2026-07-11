@@ -1,8 +1,8 @@
 import React from 'react';
 
-type IconProps = { className?: string };
+type IconProps = { className?: string; style?: React.CSSProperties };
 const base = (path: React.ReactNode, viewBox = '0 0 24 24'): React.FC<IconProps> => (props) => (
-  <svg viewBox={viewBox} fill="none" stroke="currentColor" strokeWidth="2" className={props.className}>
+  <svg viewBox={viewBox} fill="none" stroke="currentColor" strokeWidth="2" className={props.className} style={props.style}>
     {path}
   </svg>
 );
