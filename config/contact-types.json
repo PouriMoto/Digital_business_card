@@ -1,0 +1,14 @@
+{
+  "phone":     { "label_fa": "تلفن",       "placeholder": "021xxxxxxxx",         "kind": "tel" },
+  "mobile":    { "label_fa": "موبایل",     "placeholder": "09xxxxxxxxx",         "kind": "tel" },
+  "email":     { "label_fa": "ایمیل",      "placeholder": "name@example.com",    "kind": "email" },
+  "website":   { "label_fa": "وبسایت",     "placeholder": "https://example.com", "kind": "url" },
+  "instagram": { "label_fa": "اینستاگرام", "placeholder": "@username",           "kind": "url" },
+  "telegram":  { "label_fa": "تلگرام",     "placeholder": "@username",           "kind": "url" },
+  "whatsapp":  { "label_fa": "واتساپ",     "placeholder": "09xxxxxxxxx",         "kind": "url" },
+  "linkedin":  { "label_fa": "لینکدین",    "placeholder": "لینک پروفایل",         "kind": "url" },
+  "twitter":   { "label_fa": "توییتر/X",   "placeholder": "@username",           "kind": "url" },
+  "facebook":  { "label_fa": "فیسبوک",     "placeholder": "لینک پروفایل",         "kind": "url" },
+  "youtube":   { "label_fa": "یوتیوب",     "placeholder": "لینک کانال",          "kind": "url" },
+  "github":    { "label_fa": "گیت‌هاب",    "placeholder": "@username",           "kind": "url" }
+}
