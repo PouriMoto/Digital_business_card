@@ -1,0 +1,10 @@
+[
+  { "id": "solid-indigo",   "kind": "solid",    "css": "#5B5FEF", "base": "#5B5FEF" },
+  { "id": "solid-teal",     "kind": "solid",    "css": "#0F9D8A", "base": "#0F9D8A" },
+  { "id": "solid-rose",     "kind": "solid",    "css": "#E0557E", "base": "#E0557E" },
+  { "id": "solid-charcoal", "kind": "solid",    "css": "#22262E", "base": "#22262E" },
+  { "id": "grad-sunset",    "kind": "gradient", "css": "linear-gradient(135deg,#FF7A5C,#E0557E)", "base": "#FF7A5C" },
+  { "id": "grad-ocean",     "kind": "gradient", "css": "linear-gradient(135deg,#3B82F6,#0F9D8A)", "base": "#3B82F6" },
+  { "id": "grad-violet",    "kind": "gradient", "css": "linear-gradient(135deg,#8B5CF6,#5B5FEF)", "base": "#8B5CF6" },
+  { "id": "grad-forest",    "kind": "gradient", "css": "linear-gradient(135deg,#0F9D8A,#22262E)", "base": "#0F9D8A" }
+]

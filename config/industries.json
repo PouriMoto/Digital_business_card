@@ -1,0 +1,17 @@
+[
+  { "id": "retail",        "label_fa": "مغازه‌دار / خرده‌فروشی" },
+  { "id": "freelancer",    "label_fa": "فریلنسر / مستقل" },
+  { "id": "company",       "label_fa": "شرکت / سازمانی" },
+  { "id": "healthcare",    "label_fa": "پزشکی / درمانی" },
+  { "id": "legal",         "label_fa": "حقوقی / وکالت" },
+  { "id": "realestate",    "label_fa": "املاک" },
+  { "id": "food",          "label_fa": "رستوران / کافه / غذا" },
+  { "id": "beauty",        "label_fa": "زیبایی / آرایشی" },
+  { "id": "education",     "label_fa": "آموزش / تدریس" },
+  { "id": "construction",  "label_fa": "ساختمان / پیمانکاری" },
+  { "id": "automotive",    "label_fa": "خودرو / تعمیرگاه" },
+  { "id": "creative",      "label_fa": "طراحی / هنر / خلاقیت" },
+  { "id": "tech",          "label_fa": "فناوری / نرم‌افزار" },
+  { "id": "finance",       "label_fa": "مالی / حسابداری" },
+  { "id": "other",         "label_fa": "سایر" }
+]

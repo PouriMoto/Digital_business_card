@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Design Tokens — v2card
+   فلسفه: بدنه‌ی Wizard کاملاً خنثی است؛ تنها رنگ صحنه، تمی است که کاربر
+   برای خودِ کارت انتخاب می‌کند (config/themes.json). اینجا هیچ رنگ برند
+   اضافه نمی‌کنیم.
+   امضای بصری: خط پرفراژ (برش کارت از برگه) + مهر تایید مراحل.
+   ========================================================================== */
+
+@font-face {
+  font-family: 'Vazirmatn';
+  src: local('Vazirmatn');
+}
+
+:root {
+  /* --- خنثی (Wizard Chrome) --- */
+  --paper: #F7F7F5;
+  --paper-raised: #FFFFFF;
+  --ink: #15171C;
+  --ink-soft: #5B5E68;
+  --ink-faint: #9A9DA6;
+  --line: #E4E3DF;
+  --line-strong: #C9C8C2;
+  --stamp: #15171C;
+  --danger: #B3392C;
+  --danger-bg: #FBECEA;
+
+  --font-display: 'Vazirmatn', 'Tahoma', sans-serif;
+  --font-body: 'Vazirmatn', 'Tahoma', sans-serif;
+
+  --radius-card: 26px;
+  --radius-control: 12px;
+  --radius-pill: 999px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  direction: rtl;
+}
+
+img { max-width: 100%; display: block; }
+button { font-family: inherit; cursor: pointer; }
+input, textarea, select { font-family: inherit; }
+a { color: inherit; text-decoration: none; }
+
+::selection { background: var(--ink); color: var(--paper); }
+
+/* خط پرفراژ: امضای بصری بین دو ستون */
+.perforation {
+  background-image: radial-gradient(circle, var(--line-strong) 1.5px, transparent 1.6px);
+  background-size: 100% 14px;
+  background-repeat: repeat-y;
+  width: 1px;
+}
+
+.stamp-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid var(--stamp);
+  color: var(--stamp);
+  font-size: 12px;
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+/* --- Wizard shell layout --- */
+.wizard-shell {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+.wizard-shell .perforation-col { display: none; }
+@media (min-width: 980px) {
+  .wizard-shell {
+    grid-template-columns: minmax(380px, 480px) 1px 1fr;
+  }
+  .wizard-shell .perforation-col { display: block; }
+}
+
